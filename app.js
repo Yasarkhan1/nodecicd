@@ -5,7 +5,9 @@ app.get('/', (req, res) => {
     res.send('Welcome to the home page body.')
 });
 
+const port =process.env.port || 3000;
 
-app.listen(3000, () => {
-    console.log('hello')
+
+app.listen(port, () => {
+    console.log('port',port)
 })
