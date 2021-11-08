@@ -28,7 +28,7 @@ exports.createUser = (req, res) => {
                     if (err2) {
                         return res.status(502).json({ status: 0, message: err2 })
                     } else {
-                        return res.status(200).json({ message: 'User create Sucessfully.....' })
+                        return res.status(200).json({ message: 'User create Sucessfullys.....' })
                     }
                 })
             })
