@@ -40,6 +40,7 @@ app.use(
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use('/api',routers)
-app.listen(8080,()=>{
-    console.log('server start 8080')
+const port =process.env.port || 3000;
+app.listen(port,()=>{
+    console.log('server start port',port)
 })
